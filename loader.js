@@ -1,3 +1,3 @@
 activate();
-let opdrachtnummer = '1';
+let opdrachtnummer = '0';
 goTo("game_makkelijk.html");

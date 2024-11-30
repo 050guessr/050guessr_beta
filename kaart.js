@@ -71,6 +71,7 @@ async function makeRequest(url) {
   }
 }
 function Klaar(daily) {
+
   score_wijzging = 0;
   MaakLijn();
   lock = true;
@@ -89,6 +90,8 @@ function Klaar(daily) {
   }
   if (daily === "1") {
     console.log(score)
+  sessionStorage.setItem("SCWJHDSG", versleutelTekst(score))
+
 
   } else {
     if (!ontsleutelEnVergelijk(sessionStorage.getItem("SCWJHDSG"), score)) {
