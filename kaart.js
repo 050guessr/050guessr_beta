@@ -115,7 +115,7 @@ function Klaar(daily) {
   if (daily == "5" && localStorage.getItem("key") !== null) { makeRequest("https://api.050guessr.nl/set_score/" + localStorage.getItem("key") + "/" + score + "/" + sessionStorage.getItem("SCWJHDSG")) }
 
 
-
+  opdrachtnummer++;
 
   
 }
